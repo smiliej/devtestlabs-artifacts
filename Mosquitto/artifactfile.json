@@ -4,10 +4,15 @@
     "description": "A lightweight MQTT message queue",
     "iconUri": "https://mosquitto.org/images/mosquitto-text-side-28.png",
     "targetOsType": "Windows",
+    "publisher": "Cardinal Solutions",
+    "tags": [
+        "Windows",
+        "MQTT"
+    ],
     "parameters": {
-        
+
     },
     "runCommand": {
-        "commandToExecute": ""
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1)]"
     }
 }
