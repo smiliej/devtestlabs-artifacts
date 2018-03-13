@@ -13,6 +13,6 @@
 
     },
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1)]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1', '', '\"')]"
     }
 }
