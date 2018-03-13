@@ -1,0 +1,13 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Mosquitto",
+    "description": "A lightweight MQTT message queue",
+    "iconUri": "https://mosquitto.org/images/mosquitto-text-side-28.png",
+    "targetOsType": "Windows",
+    "parameters": {
+        
+    },
+    "runCommand": {
+        "commandToExecute": ""
+    }
+}
