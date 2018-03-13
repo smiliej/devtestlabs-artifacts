@@ -1,1 +1,1 @@
-Get-Acl
+Get-ChildItem
