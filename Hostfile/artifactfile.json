@@ -1,0 +1,26 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "title": "Hostfile",
+    "description": "Appends a host  to the hosts file",
+    "iconUri": "",
+    "targetOsType": "Windows",
+    "publisher": "Cardinal Solutions",
+    "tags": [
+        "Windows"
+    ],
+    "parameters": {
+        "ipAddress": {
+            "type": "string",
+            "displayName": "IP Address",
+            "description": "The IP address of the entry"
+        },
+        "hostName": {
+            "type": "string",
+            "displayName": "Hostname",
+            "description": "The hostname of the entry"
+        }
+    },
+    "runCommand": {
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1 -IpAddress', parameters('ipAddress'), ' -Hostname', parameters('hostName'), '\"')]"
+    }
+}
