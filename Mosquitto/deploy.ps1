@@ -1,1 +1,1 @@
-Get-ChildItem
+.\mosquitto-1.4.15-install-win32.exe /S
