@@ -1,8 +1,8 @@
 {
     "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
     "title": "Redis",
-    "description": "Redis 3.2",
-    "iconUri": "",
+    "description": "Redis 3.0.5",
+    "iconUri": "https://redis.io/images/redis-white.png",
     "targetOsType": "Windows",
     "publisher": "Cardinal Solutions",
     "tags": [
@@ -12,6 +12,6 @@
     ],
     "parameters": {},
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./startChocolatey.ps1 -PackageList ', 'redis-64', '\"')]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1', '', '\"')]"
     }
 }
