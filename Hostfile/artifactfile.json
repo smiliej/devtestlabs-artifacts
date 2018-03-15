@@ -21,6 +21,6 @@
         }
     },
     "runCommand": {
-        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1 -IpAddress', parameters('ipAddress'), ' -Hostname', parameters('hostName'), '\"')]"
+        "commandToExecute": "[concat('powershell.exe -ExecutionPolicy bypass \"& ./deploy.ps1 -IpAddress ', parameters('ipAddress'), ' -Hostname ', parameters('hostName'), '\"')]"
     }
 }
